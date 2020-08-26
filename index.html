@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Our Client's</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <h2 class="text-center font-weight-bold">Our Client's</h2>
+      <center>  <p>We did a great Job for these Clients.</p> </center>
+        <section class="customer-logos slider">
+            <div class="slide"><img src="https://www.forumcube.com/wp-content/uploads/2018/07/OBForumLogo-1.png" alt="logo"></div>
+            <div class="slide"><img src="https://www.forumcube.com/wp-content/uploads/2018/07/logo-1-2.png" alt="logo"></div>
+            <div class="slide"><img src="https://www.forumcube.com/wp-content/uploads/2018/07/logo-3.png" alt="logo"></div>
+   
+            <div class="slide"><img src="https://www.forumcube.com/wp-content/uploads/2018/07/logo-2-1.png" alt="logo"></div>
+            <div class="slide"><img src="https://www.forumcube.com/wp-content/uploads/2018/07/motorhome-forum-help.png" alt="logo"></div>
+           
+        </section>
+    </div>
+
+    
+<script>
+      
+      $(document).ready(function(){
+        $('.customer-logos').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1500,
+            arrows: false,
+            
+            pauseOnHover:true,
+            responsive: [{
+                breakpoint: 768,
+                setting: {
+                    slidesToShow:4
+                }
+            }, {
+                breakpoint: 520,
+                setting: {
+                    slidesToShow: 3
+                }
+            }]
+        });
+    });
+</script>
+
+</body>
+</html>
